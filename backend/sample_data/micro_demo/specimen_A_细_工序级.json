@@ -1,0 +1,365 @@
+{
+  "plan_id": "micro_demo_office_a",
+  "overview": {
+    "project_name": "3 层办公楼（微型标本）",
+    "total_duration_days": 45,
+    "planned_start_date": "2026-03-01",
+    "planned_end_date": "2026-04-15",
+    "critical_path_length": 18
+  },
+  "wbs": {
+    "phases": [
+      {
+        "phase": "施工准备",
+        "work_packages": [
+          {
+            "id": "1.1",
+            "name": "施工准备",
+            "sub_packages": [
+              {
+                "id": "1.1.1",
+                "name": "施工准备",
+                "location": "场地",
+                "work_type": "准备工程",
+                "quantity": 1.0,
+                "unit": "项",
+                "duration_days": 3,
+                "_step_name": "施工准备",
+                "_qty_source": "用户直接输入",
+                "_qty_formula": "1 项（整体）"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "phase": "地基与基础",
+        "work_packages": [
+          {
+            "id": "2.1",
+            "name": "地基与基础",
+            "sub_packages": [
+              {
+                "id": "2.1.1",
+                "name": "基坑开挖",
+                "location": "场地",
+                "work_type": "土方工程",
+                "quantity": 850.0,
+                "unit": "m³",
+                "duration_days": 5,
+                "_step_name": "基坑开挖",
+                "_qty_source": "参数推算",
+                "_qty_formula": "基底面积 170m² × 平均深度 5.0m = 850 m³"
+              },
+              {
+                "id": "2.1.2",
+                "name": "垫层浇筑",
+                "location": "场地",
+                "work_type": "混凝土工程",
+                "quantity": 45.0,
+                "unit": "m³",
+                "duration_days": 2,
+                "_step_name": "垫层浇筑",
+                "_qty_source": "参数推算",
+                "_qty_formula": "基底面积 170m² × 垫层厚度 0.26m ≈ 45 m³"
+              },
+              {
+                "id": "2.1.3",
+                "name": "底板浇筑",
+                "location": "场地",
+                "work_type": "混凝土工程",
+                "quantity": 120.0,
+                "unit": "m³",
+                "duration_days": 3,
+                "_step_name": "底板浇筑",
+                "_qty_source": "参数推算",
+                "_qty_formula": "基底面积 170m² × 底板厚度 0.70m ≈ 120 m³"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "phase": "主体结构",
+        "work_packages": [
+          {
+            "id": "3.1",
+            "name": "主体结构",
+            "sub_packages": [
+              {
+                "id": "3.1.1",
+                "name": "Ⅰ区 1-1层 钢筋绑扎",
+                "location": "Ⅰ区 1-1层",
+                "work_type": "钢筋工程",
+                "quantity": 12.5,
+                "unit": "t",
+                "duration_days": 3,
+                "_step_name": "钢筋绑扎",
+                "_qty_source": "参数推算",
+                "_qty_formula": "层建筑面积 560m² × 含钢量 22.3 kg/m² ÷ 1000 ≈ 12.5 t"
+              },
+              {
+                "id": "3.1.2",
+                "name": "Ⅰ区 1-1层 模板安装",
+                "location": "Ⅰ区 1-1层",
+                "work_type": "模板工程",
+                "quantity": 180.0,
+                "unit": "m²",
+                "duration_days": 2,
+                "_step_name": "模板安装",
+                "_qty_source": "参数推算",
+                "_qty_formula": "层建筑面积 560m² × 模板系数 0.32 ≈ 180 m²"
+              },
+              {
+                "id": "3.1.3",
+                "name": "Ⅰ区 1-1层 混凝土浇筑",
+                "location": "Ⅰ区 1-1层",
+                "work_type": "混凝土工程",
+                "quantity": 85.0,
+                "unit": "m³",
+                "duration_days": 1,
+                "_step_name": "混凝土浇筑",
+                "_qty_source": "参数推算",
+                "_qty_formula": "层建筑面积 560m² × 混凝土厚度 0.15m + 柱梁 ≈ 85 m³"
+              },
+              {
+                "id": "3.1.4",
+                "name": "Ⅰ区 1-1层 砌体",
+                "location": "Ⅰ区 1-1层",
+                "work_type": "砌体工程",
+                "quantity": 35.0,
+                "unit": "m³",
+                "duration_days": 2,
+                "_step_name": "砌体",
+                "_qty_source": "参数推算",
+                "_qty_formula": "隔墙总长 180m × 墙高 3.0m × 墙厚 0.20m ≈ 35 m³"
+              },
+              {
+                "id": "3.1.5",
+                "name": "Ⅰ区 2-2层 钢筋绑扎",
+                "location": "Ⅰ区 2-2层",
+                "work_type": "钢筋工程",
+                "quantity": 11.8,
+                "unit": "t",
+                "duration_days": 3,
+                "_step_name": "钢筋绑扎",
+                "_qty_source": "参数推算",
+                "_qty_formula": "层建筑面积 560m² × 含钢量 21.1 kg/m² ÷ 1000 ≈ 11.8 t"
+              },
+              {
+                "id": "3.1.6",
+                "name": "Ⅰ区 2-2层 模板安装",
+                "location": "Ⅰ区 2-2层",
+                "work_type": "模板工程",
+                "quantity": 180.0,
+                "unit": "m²",
+                "duration_days": 2,
+                "_step_name": "模板安装",
+                "_qty_source": "参数推算",
+                "_qty_formula": "层建筑面积 560m² × 模板系数 0.32 ≈ 180 m²"
+              },
+              {
+                "id": "3.1.7",
+                "name": "Ⅰ区 2-2层 混凝土浇筑",
+                "location": "Ⅰ区 2-2层",
+                "work_type": "混凝土工程",
+                "quantity": 82.0,
+                "unit": "m³",
+                "duration_days": 1,
+                "_step_name": "混凝土浇筑",
+                "_qty_source": "参数推算",
+                "_qty_formula": "层建筑面积 560m² × 混凝土厚度 0.147m + 柱梁 ≈ 82 m³"
+              },
+              {
+                "id": "3.1.8",
+                "name": "Ⅰ区 2-2层 砌体",
+                "location": "Ⅰ区 2-2层",
+                "work_type": "砌体工程",
+                "quantity": 35.0,
+                "unit": "m³",
+                "duration_days": 2,
+                "_step_name": "砌体",
+                "_qty_source": "参数推算",
+                "_qty_formula": "隔墙总长 180m × 墙高 3.0m × 墙厚 0.20m ≈ 35 m³"
+              },
+              {
+                "id": "3.1.9",
+                "name": "Ⅰ区 3-3层 钢筋绑扎",
+                "location": "Ⅰ区 3-3层",
+                "work_type": "钢筋工程",
+                "quantity": 11.2,
+                "unit": "t",
+                "duration_days": 3,
+                "_step_name": "钢筋绑扎",
+                "_qty_source": "参数推算",
+                "_qty_formula": "层建筑面积 560m² × 含钢量 20.0 kg/m² ÷ 1000 ≈ 11.2 t"
+              },
+              {
+                "id": "3.1.10",
+                "name": "Ⅰ区 3-3层 模板安装",
+                "location": "Ⅰ区 3-3层",
+                "work_type": "模板工程",
+                "quantity": 175.0,
+                "unit": "m²",
+                "duration_days": 3,
+                "_step_name": "模板安装",
+                "_qty_source": "参数推算",
+                "_qty_formula": "层建筑面积 560m² × 模板系数 0.313 ≈ 175 m²"
+              },
+              {
+                "id": "3.1.11",
+                "name": "Ⅰ区 3-3层 混凝土浇筑",
+                "location": "Ⅰ区 3-3层",
+                "work_type": "混凝土工程",
+                "quantity": 80.0,
+                "unit": "m³",
+                "duration_days": 1,
+                "_step_name": "混凝土浇筑",
+                "_qty_source": "参数推算",
+                "_qty_formula": "层建筑面积 560m² × 混凝土厚度 0.143m + 柱梁 ≈ 80 m³"
+              },
+              {
+                "id": "3.1.12",
+                "name": "Ⅰ区 3-3层 砌体",
+                "location": "Ⅰ区 3-3层",
+                "work_type": "砌体工程",
+                "quantity": 33.0,
+                "unit": "m³",
+                "duration_days": 2,
+                "_step_name": "砌体",
+                "_qty_source": "参数推算",
+                "_qty_formula": "隔墙总长 170m × 墙高 3.0m × 墙厚 0.20m ≈ 33 m³"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "phase": "二次结构与砌体",
+        "work_packages": [
+          {
+            "id": "4.1",
+            "name": "二次结构与砌体",
+            "sub_packages": [
+              {
+                "id": "4.1.1",
+                "name": "二次砌体施工",
+                "location": "全楼",
+                "work_type": "砌体工程",
+                "quantity": 105.0,
+                "unit": "m³",
+                "duration_days": 3,
+                "_step_name": "二次砌体施工",
+                "_qty_source": "参数推算",
+                "_qty_formula": "3 层 × 隔墙 35m³/层 ≈ 105 m³"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "phase": "装饰装修",
+        "work_packages": [
+          {
+            "id": "5.1",
+            "name": "装饰装修",
+            "sub_packages": [
+              {
+                "id": "5.1.1",
+                "name": "内墙抹灰",
+                "location": "全楼",
+                "work_type": "抹灰工程",
+                "quantity": 2400.0,
+                "unit": "m²",
+                "duration_days": 3,
+                "_step_name": "内墙抹灰",
+                "_qty_source": "参数推算",
+                "_qty_formula": "3 层 × 内墙面 800m²/层 ≈ 2400 m²"
+              },
+              {
+                "id": "5.1.2",
+                "name": "地面施工",
+                "location": "全楼",
+                "work_type": "地面工程",
+                "quantity": 900.0,
+                "unit": "m²",
+                "duration_days": 2,
+                "_step_name": "地面施工",
+                "_qty_source": "参数推算",
+                "_qty_formula": "3 层 × 地面面积 300m²/层 ≈ 900 m²"
+              },
+              {
+                "id": "5.1.3",
+                "name": "外墙涂料",
+                "location": "全楼",
+                "work_type": "涂料工程",
+                "quantity": 1200.0,
+                "unit": "m²",
+                "duration_days": 3,
+                "_step_name": "外墙涂料",
+                "_qty_source": "参数推算",
+                "_qty_formula": "外墙周长 120m × 层高 3.0m × 3 层 ≈ 1200 m²"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies": [
+    {"predecessor": "1.1.1", "successor": "2.1.1", "type": "FS", "lag_days": 0},
+    {"predecessor": "2.1.1", "successor": "2.1.2", "type": "FS", "lag_days": 0},
+    {"predecessor": "2.1.2", "successor": "2.1.3", "type": "FS", "lag_days": 0},
+    {"predecessor": "2.1.3", "successor": "3.1.1", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.1", "successor": "3.1.2", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.2", "successor": "3.1.3", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.3", "successor": "3.1.5", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.5", "successor": "3.1.6", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.6", "successor": "3.1.7", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.7", "successor": "3.1.9", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.9", "successor": "3.1.10", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.10", "successor": "3.1.11", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.11", "successor": "5.1.1", "type": "FS", "lag_days": 0},
+    {"predecessor": "5.1.1", "successor": "5.1.2", "type": "FS", "lag_days": 0},
+    {"predecessor": "5.1.2", "successor": "5.1.3", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.3", "successor": "3.1.4", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.7", "successor": "3.1.8", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.11", "successor": "3.1.12", "type": "FS", "lag_days": 0},
+    {"predecessor": "3.1.12", "successor": "4.1.1", "type": "FS", "lag_days": 0},
+    {"predecessor": "4.1.1", "successor": "5.1.1", "type": "FS", "lag_days": 0}
+  ],
+  "cpm_result": {
+    "total_duration_days": 45,
+    "critical_path": [
+      "1.1.1", "2.1.1", "2.1.2", "2.1.3",
+      "3.1.1", "3.1.2", "3.1.3",
+      "3.1.5", "3.1.6", "3.1.7",
+      "3.1.9", "3.1.10", "3.1.11", "3.1.12",
+      "4.1.1",
+      "5.1.1", "5.1.2", "5.1.3"
+    ],
+    "schedule": []
+  },
+  "resource_demand": {
+    "tasks": []
+  },
+  "resource_plan": {
+    "total_manpower_days": 480.0,
+    "peak_manpower": 28,
+    "equipment_peak": {
+      "塔吊": 1,
+      "混凝土泵车": 1,
+      "钢筋弯曲机": 1
+    },
+    "material_summary": [
+      {"name": "钢筋", "total_quantity": 35.5, "unit": "t"},
+      {"name": "混凝土", "total_quantity": 412.0, "unit": "m³"},
+      {"name": "砌块", "total_quantity": 208.0, "unit": "m³"}
+    ]
+  },
+  "meta": {
+    "audit_status": "已审计",
+    "plan_level": "L4",
+    "caliber_note": "微型标本：3 层办公楼，单栋，工序级 × 按层（细粒度）"
+  }
+}

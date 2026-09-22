@@ -1,0 +1,58 @@
+{
+  "phases": [
+    { "phase": "施工准备", "work_packages": [
+      { "id": "1.1", "name": "场地准备", "sub_packages": [
+        { "id": "1.1.1", "name": "场地平整", "duration_days": 6, "quantity": 60000, "unit": "㎡", "work_type": "土建临建" },
+        { "id": "1.1.2", "name": "临时道路", "duration_days": 3, "quantity": 1, "unit": "项", "work_type": "土建临建" }
+      ]},
+      { "id": "1.2", "name": "临水临电", "sub_packages": [
+        { "id": "1.2.1", "name": "临时水电", "duration_days": 4, "quantity": 1, "unit": "项", "work_type": "机电安装" }
+      ]}
+    ]},
+    { "phase": "桩基工程", "work_packages": [
+      { "id": "2.1", "name": "灌注桩", "sub_packages": [
+        { "id": "2.1.1", "name": "灌注桩", "duration_days": 35, "quantity": 30000, "unit": "m", "work_type": "桩基工程" }
+      ]},
+      { "id": "2.2", "name": "检测", "sub_packages": [
+        { "id": "2.2.1", "name": "桩基检测", "duration_days": 7, "quantity": 30000, "unit": "m", "work_type": "检测工程" }
+      ]}
+    ]},
+    { "phase": "基坑与基础", "work_packages": [
+      { "id": "3.1", "name": "土方", "sub_packages": [
+        { "id": "3.1.1", "name": "土方开挖", "duration_days": 20, "quantity": 80000, "unit": "m³", "work_type": "土方工程" }
+      ]},
+      { "id": "3.2", "name": "基础底板", "sub_packages": [
+        { "id": "3.2.1", "name": "底板钢筋", "duration_days": 10, "quantity": 4500, "unit": "吨", "work_type": "钢筋工程" },
+        { "id": "3.2.2", "name": "底板混凝土", "duration_days": 7, "quantity": 12000, "unit": "m³", "work_type": "混凝土工程" }
+      ]}
+    ]},
+    { "phase": "主体结构", "work_packages": [
+      { "id": "4.1", "name": "主体框架", "sub_packages": [
+        { "id": "4.1.1", "name": "主体钢筋", "duration_days": 50, "quantity": 18000, "unit": "吨", "work_type": "钢筋工程" },
+        { "id": "4.1.2", "name": "主体混凝土", "duration_days": 75, "quantity": 26000, "unit": "m³", "work_type": "混凝土工程" },
+        { "id": "4.1.3", "name": "混凝土养护", "duration_days": 30, "quantity": 1, "unit": "项", "work_type": "养护工程" }
+      ]}
+    ]},
+    { "phase": "围护与机电", "work_packages": [
+      { "id": "5.1", "name": "围护结构", "sub_packages": [
+        { "id": "5.1.1", "name": "墙面抹灰", "duration_days": 25, "quantity": 90000, "unit": "㎡", "work_type": "粗装修" },
+        { "id": "5.1.2", "name": "外墙保温", "duration_days": 20, "quantity": 30000, "unit": "㎡", "work_type": "保温工程" }
+      ]},
+      { "id": "5.2", "name": "机电安装", "sub_packages": [
+        { "id": "5.2.1", "name": "给水管道", "duration_days": 20, "quantity": 8000, "unit": "m", "work_type": "机电安装" },
+        { "id": "5.2.2", "name": "电气管线", "duration_days": 25, "quantity": 60000, "unit": "m", "work_type": "电气安装" },
+        { "id": "5.2.3", "name": "通风管道", "duration_days": 20, "quantity": 15000, "unit": "㎡", "work_type": "暖通安装" }
+      ]}
+    ]},
+    { "phase": "室外与验收", "work_packages": [
+      { "id": "6.1", "name": "室外工程", "sub_packages": [
+        { "id": "6.1.1", "name": "室外管网", "duration_days": 18, "quantity": 1, "unit": "项", "work_type": "室外管网" },
+        { "id": "6.1.2", "name": "道路铺装", "duration_days": 15, "quantity": 15000, "unit": "㎡", "work_type": "景观工程" }
+      ]},
+      { "id": "6.2", "name": "验收", "sub_packages": [
+        { "id": "6.2.1", "name": "专项验收", "duration_days": 10, "quantity": 1, "unit": "项", "work_type": "验收管理" },
+        { "id": "6.2.2", "name": "竣工备案", "duration_days": 5, "quantity": 1, "unit": "项", "work_type": "验收管理" }
+      ]}
+    ]}
+  ]
+}

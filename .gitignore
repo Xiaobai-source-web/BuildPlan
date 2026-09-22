@@ -1,0 +1,45 @@
+# ===== 密钥（绝不入库）=====
+.env
+*.env
+!.env.example
+# 多套模型配置（第 35 轮）：里面存着**明文 key**，绝不能入库，也不能进交付包
+backend/llm_profiles.json
+*.llm_profiles.json
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+
+# ===== 运行产物（可再生；不入库，避免仓库被几十 MB JSON 撑大）=====
+输出结果/
+backend/plans/
+backend/deliverables/
+terminal/plans/
+backend/_test_tmp/
+backend/_measure_tmp/
+backend/_probe_tmp/
+_probe_tmp/
+_smoke_tmp/
+交付包/
+backend/tests/_tmp_run/
+_plan_archive/
+
+# 文档备份（二进制大文件，原文档本身已入库）
+资料/_backup_*.docx
+*.bak_*.docx
+# KB 数据修复前的备份（3.8 MB 二进制，需要时可重跑 tools/fix_norm_basis.py 生成）
+BuildPlan_KB/kb.db.bak_*
+# pytest 在沙箱里建了删不掉的缓存目录（权限拒绝），只能忽略
+pytest-cache-files-*/
+
+# ===== 日志与临时文件 =====
+*.log
+~$*.docx
+backend/_t.docx
+.DS_Store
+Thumbs.db

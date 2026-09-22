@@ -1,0 +1,76 @@
+{
+  "phases": [
+    { "phase": "施工准备", "work_packages": [
+      { "id": "1.1", "name": "场地准备", "sub_packages": [
+        { "id": "1.1.1", "name": "场地平整", "duration_days": 5, "quantity": 12000, "unit": "㎡", "work_type": "土建临建" },
+        { "id": "1.1.2", "name": "临时道路", "duration_days": 3, "quantity": 1, "unit": "项", "work_type": "土建临建" }
+      ]},
+      { "id": "1.2", "name": "临水临电", "sub_packages": [
+        { "id": "1.2.1", "name": "临时水电", "duration_days": 4, "quantity": 1, "unit": "项", "work_type": "机电安装" },
+        { "id": "1.2.2", "name": "定位放线", "duration_days": 2, "quantity": 128000, "unit": "㎡", "work_type": "测量工程" }
+      ]}
+    ]},
+    { "phase": "桩基工程", "work_packages": [
+      { "id": "2.1", "name": "管桩施工", "sub_packages": [
+        { "id": "2.1.1", "name": "PRC管桩", "duration_days": 30, "quantity": 24000, "unit": "m", "work_type": "桩基工程" },
+        { "id": "2.1.2", "name": "截桩接桩", "duration_days": 5, "quantity": 24000, "unit": "m", "work_type": "桩基工程" }
+      ]},
+      { "id": "2.2", "name": "检测", "sub_packages": [
+        { "id": "2.2.1", "name": "桩基检测", "duration_days": 7, "quantity": 24000, "unit": "m", "work_type": "检测工程" }
+      ]}
+    ]},
+    { "phase": "基坑支护", "work_packages": [
+      { "id": "3.1", "name": "土方与支护", "sub_packages": [
+        { "id": "3.1.1", "name": "土方开挖", "duration_days": 25, "quantity": 96000, "unit": "m³", "work_type": "土方工程" },
+        { "id": "3.1.2", "name": "内支撑", "duration_days": 10, "quantity": 1200, "unit": "吨", "work_type": "钢筋混凝土工程" }
+      ]},
+      { "id": "3.2", "name": "监测", "sub_packages": [
+        { "id": "3.2.1", "name": "基坑监测", "duration_days": 20, "quantity": 1, "unit": "项", "work_type": "监测工程" }
+      ]}
+    ]},
+    { "phase": "地下结构", "work_packages": [
+      { "id": "4.1", "name": "地下室底板", "sub_packages": [
+        { "id": "4.1.1", "name": "底板钢筋", "duration_days": 12, "quantity": 15600, "unit": "吨", "work_type": "钢筋工程" },
+        { "id": "4.1.2", "name": "底板混凝土", "duration_days": 8, "quantity": 15600, "unit": "m³", "work_type": "混凝土工程" }
+      ]},
+      { "id": "4.2", "name": "地下室墙柱", "sub_packages": [
+        { "id": "4.2.1", "name": "墙柱钢筋", "duration_days": 14, "quantity": 10400, "unit": "吨", "work_type": "钢筋工程" },
+        { "id": "4.2.2", "name": "墙柱混凝土", "duration_days": 10, "quantity": 10400, "unit": "m³", "work_type": "混凝土工程" }
+      ]}
+    ]},
+    { "phase": "主体结构", "work_packages": [
+      { "id": "5.1", "name": "主体标准层", "sub_packages": [
+        { "id": "5.1.1", "name": "主体钢筋", "duration_days": 60, "quantity": 52500, "unit": "吨", "work_type": "钢筋工程" },
+        { "id": "5.1.2", "name": "主体混凝土", "duration_days": 90, "quantity": 31200, "unit": "m³", "work_type": "混凝土工程" }
+      ]},
+      { "id": "5.2", "name": "养护", "sub_packages": [
+        { "id": "5.2.1", "name": "混凝土养护", "duration_days": 30, "quantity": 1, "unit": "项", "work_type": "养护工程" }
+      ]}
+    ]},
+    { "phase": "二次结构", "work_packages": [
+      { "id": "6.1", "name": "砌体", "sub_packages": [
+        { "id": "6.1.1", "name": "ALC墙板", "duration_days": 40, "quantity": 76800, "unit": "㎡", "work_type": "砌筑工程" },
+        { "id": "6.1.2", "name": "构造柱", "duration_days": 15, "quantity": 1, "unit": "项", "work_type": "混凝土工程" }
+      ]}
+    ]},
+    { "phase": "装饰装修", "work_packages": [
+      { "id": "7.1", "name": "抹灰保温", "sub_packages": [
+        { "id": "7.1.1", "name": "墙面抹灰", "duration_days": 45, "quantity": 320000, "unit": "㎡", "work_type": "粗装修" },
+        { "id": "7.1.2", "name": "外墙保温", "duration_days": 30, "quantity": 64000, "unit": "㎡", "work_type": "保温工程" }
+      ]},
+      { "id": "7.2", "name": "门窗", "sub_packages": [
+        { "id": "7.2.1", "name": "门窗框", "duration_days": 25, "quantity": 6400, "unit": "樘", "work_type": "门窗工程" }
+      ]}
+    ]},
+    { "phase": "室外与验收", "work_packages": [
+      { "id": "8.1", "name": "室外工程", "sub_packages": [
+        { "id": "8.1.1", "name": "室外管网", "duration_days": 20, "quantity": 1, "unit": "项", "work_type": "室外管网" },
+        { "id": "8.1.2", "name": "道路铺装", "duration_days": 15, "quantity": 8000, "unit": "㎡", "work_type": "景观工程" }
+      ]},
+      { "id": "8.2", "name": "验收", "sub_packages": [
+        { "id": "8.2.1", "name": "专项验收", "duration_days": 10, "quantity": 1, "unit": "项", "work_type": "验收管理" },
+        { "id": "8.2.2", "name": "竣工备案", "duration_days": 5, "quantity": 1, "unit": "项", "work_type": "验收管理" }
+      ]}
+    ]}
+  ]
+}
